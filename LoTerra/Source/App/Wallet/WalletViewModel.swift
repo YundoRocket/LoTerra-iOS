@@ -6,3 +6,14 @@
 //
 
 import Foundation
+
+final class WalletViewModel {
+    
+    // MARK: - Outlets
+    
+    
+    
+    // MARK: - Inputs
+    
+    
+}

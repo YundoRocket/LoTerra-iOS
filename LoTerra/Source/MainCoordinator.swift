@@ -9,7 +9,7 @@ import UIKit
 
 enum ViewControllerItem: Int {
     case home = 0
-//    case favorite = 1
+    case wallet = 1
 }
 
 protocol TabBarSourceType {
@@ -32,6 +32,7 @@ extension TabBarSourceType {
 
 fileprivate class TabBarSource: TabBarSourceType {
     var items: [UINavigationController] = [
+        UINavigationController(nibName: nil, bundle: nil),
         UINavigationController(nibName: nil, bundle: nil)
     ]
 
@@ -39,6 +40,9 @@ fileprivate class TabBarSource: TabBarSourceType {
         self[.home].tabBarItem = UITabBarItem(title: "Home",
                                               image: UIImage(systemName: "house"),
                                               tag: 0)
+        self[.wallet].tabBarItem = UITabBarItem(title: "wallet",
+                                                image: UIImage(systemName: "creditcard"),
+                                                tag: 1)
     }
 }
 
@@ -51,6 +55,7 @@ final class MainCoordinator: NSObject {
     private let screens: Screens
     private var tabBarSource = TabBarSource()
     private var homeCoordinator: HomeCoordinator?
+    private var walletCoordinator: WalletCoordinator?
 
     // MARK: - Init
 
@@ -82,6 +87,12 @@ final class MainCoordinator: NSObject {
                                           screens: screens)
         homeCoordinator?.start()
     }
+    
+    private func showWallet() {
+        walletCoordinator = WalletCoordinator(presenter: tabBarSource[.wallet],
+                                                    screens: screens)
+        walletCoordinator?.start()
+    }
 }
 
 extension MainCoordinator: UITabBarControllerDelegate {
@@ -98,6 +109,8 @@ extension MainCoordinator: UITabBarControllerDelegate {
         switch item {
         case .home:
             showHome()
+        case .wallet:
+            showWallet()
         }
     }
 }

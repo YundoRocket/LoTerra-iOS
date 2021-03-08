@@ -8,14 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		915EE36225E8F4B100B3B35A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915EE36125E8F4B100B3B35A /* AppDelegate.swift */; };
-		915EE36425E8F4B100B3B35A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915EE36325E8F4B100B3B35A /* SceneDelegate.swift */; };
-		915EE36625E8F4B100B3B35A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915EE36525E8F4B100B3B35A /* ViewController.swift */; };
 		915EE36925E8F4B100B3B35A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 915EE36725E8F4B100B3B35A /* Main.storyboard */; };
 		915EE36C25E8F4B100B3B35A /* LoTerra.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 915EE36A25E8F4B100B3B35A /* LoTerra.xcdatamodeld */; };
 		915EE36E25E8F4B200B3B35A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 915EE36D25E8F4B200B3B35A /* Assets.xcassets */; };
 		915EE37125E8F4B200B3B35A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 915EE36F25E8F4B200B3B35A /* LaunchScreen.storyboard */; };
 		915EE37C25E8F4B200B3B35A /* LoTerraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915EE37B25E8F4B200B3B35A /* LoTerraTests.swift */; };
 		915EE38725E8F4B200B3B35A /* LoTerraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915EE38625E8F4B200B3B35A /* LoTerraUITests.swift */; };
+		915EE39D25E8F56000B3B35A /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915EE39C25E8F56000B3B35A /* Coordinator.swift */; };
+		915EE3A225E8F56D00B3B35A /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915EE3A125E8F56D00B3B35A /* MainCoordinator.swift */; };
+		915EE3A725E8F57A00B3B35A /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915EE3A625E8F57A00B3B35A /* Context.swift */; };
+		915EE3AF25E8F58D00B3B35A /* Screens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915EE3AE25E8F58D00B3B35A /* Screens.swift */; };
+		915EE3B725E8F5AD00B3B35A /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915EE3B425E8F5AD00B3B35A /* HTTPClient.swift */; };
+		915EE3B825E8F5AD00B3B35A /* HTTPEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915EE3B525E8F5AD00B3B35A /* HTTPEngine.swift */; };
+		915EE3B925E8F5AD00B3B35A /* RequestCancellationToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915EE3B625E8F5AD00B3B35A /* RequestCancellationToken.swift */; };
+		915EE3C025E8F60300B3B35A /* AlertConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915EE3BE25E8F60300B3B35A /* AlertConfiguration.swift */; };
+		915EE3C125E8F60300B3B35A /* AlertType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915EE3BF25E8F60300B3B35A /* AlertType.swift */; };
+		915EE3D025E8F6BA00B3B35A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915EE3CF25E8F6BA00B3B35A /* HomeViewController.swift */; };
+		915EE3D525E8F6C300B3B35A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915EE3D425E8F6C300B3B35A /* HomeViewModel.swift */; };
+		915EE3DA25E8F75500B3B35A /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915EE3D925E8F75500B3B35A /* HomeCoordinator.swift */; };
+		915EE3E025E8FBF300B3B35A /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915EE3DF25E8FBF300B3B35A /* WalletViewController.swift */; };
+		915EE3E825E8FC3800B3B35A /* WalletCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915EE3E725E8FC3800B3B35A /* WalletCoordinator.swift */; };
+		915EE3EE25E8FD4700B3B35A /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915EE3ED25E8FD4700B3B35A /* Closures.swift */; };
+		915EE3F625E8FD5600B3B35A /* WalletViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915EE3F525E8FD5600B3B35A /* WalletViewModel.swift */; };
+		91B501EB25F6C688000BA94A /* Wordlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B501EA25F6C688000BA94A /* Wordlist.swift */; };
+		91B501F025F6C721000BA94A /* BIP39.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B501EF25F6C721000BA94A /* BIP39.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +54,6 @@
 /* Begin PBXFileReference section */
 		915EE35E25E8F4B100B3B35A /* LoTerra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoTerra.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		915EE36125E8F4B100B3B35A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		915EE36325E8F4B100B3B35A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		915EE36525E8F4B100B3B35A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		915EE36825E8F4B100B3B35A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		915EE36B25E8F4B100B3B35A /* LoTerra.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LoTerra.xcdatamodel; sourceTree = "<group>"; };
 		915EE36D25E8F4B200B3B35A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +65,24 @@
 		915EE38225E8F4B200B3B35A /* LoTerraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoTerraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		915EE38625E8F4B200B3B35A /* LoTerraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoTerraUITests.swift; sourceTree = "<group>"; };
 		915EE38825E8F4B200B3B35A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		915EE39C25E8F56000B3B35A /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		915EE3A125E8F56D00B3B35A /* MainCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		915EE3A625E8F57A00B3B35A /* Context.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Context.swift; sourceTree = "<group>"; };
+		915EE3AE25E8F58D00B3B35A /* Screens.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Screens.swift; sourceTree = "<group>"; };
+		915EE3B425E8F5AD00B3B35A /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		915EE3B525E8F5AD00B3B35A /* HTTPEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPEngine.swift; sourceTree = "<group>"; };
+		915EE3B625E8F5AD00B3B35A /* RequestCancellationToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestCancellationToken.swift; sourceTree = "<group>"; };
+		915EE3BE25E8F60300B3B35A /* AlertConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertConfiguration.swift; sourceTree = "<group>"; };
+		915EE3BF25E8F60300B3B35A /* AlertType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertType.swift; sourceTree = "<group>"; };
+		915EE3CF25E8F6BA00B3B35A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		915EE3D425E8F6C300B3B35A /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		915EE3D925E8F75500B3B35A /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		915EE3DF25E8FBF300B3B35A /* WalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
+		915EE3E725E8FC3800B3B35A /* WalletCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletCoordinator.swift; sourceTree = "<group>"; };
+		915EE3ED25E8FD4700B3B35A /* Closures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Closures.swift; sourceTree = "<group>"; };
+		915EE3F525E8FD5600B3B35A /* WalletViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewModel.swift; sourceTree = "<group>"; };
+		91B501EA25F6C688000BA94A /* Wordlist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wordlist.swift; sourceTree = "<group>"; };
+		91B501EF25F6C721000BA94A /* BIP39.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BIP39.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,13 +133,8 @@
 		915EE36025E8F4B100B3B35A /* LoTerra */ = {
 			isa = PBXGroup;
 			children = (
-				915EE36125E8F4B100B3B35A /* AppDelegate.swift */,
-				915EE36325E8F4B100B3B35A /* SceneDelegate.swift */,
-				915EE36525E8F4B100B3B35A /* ViewController.swift */,
-				915EE36725E8F4B100B3B35A /* Main.storyboard */,
-				915EE36D25E8F4B200B3B35A /* Assets.xcassets */,
-				915EE36F25E8F4B200B3B35A /* LaunchScreen.storyboard */,
-				915EE37225E8F4B200B3B35A /* Info.plist */,
+				915EE39725E8F4D900B3B35A /* Source */,
+				915EE39825E8F4E700B3B35A /* Ressources */,
 				915EE36A25E8F4B100B3B35A /* LoTerra.xcdatamodeld */,
 			);
 			path = LoTerra;
@@ -129,6 +156,107 @@
 				915EE38825E8F4B200B3B35A /* Info.plist */,
 			);
 			path = LoTerraUITests;
+			sourceTree = "<group>";
+		};
+		915EE39725E8F4D900B3B35A /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				915EE36125E8F4B100B3B35A /* AppDelegate.swift */,
+				915EE3A625E8F57A00B3B35A /* Context.swift */,
+				915EE3AE25E8F58D00B3B35A /* Screens.swift */,
+				915EE39C25E8F56000B3B35A /* Coordinator.swift */,
+				915EE3A125E8F56D00B3B35A /* MainCoordinator.swift */,
+				915EE36725E8F4B100B3B35A /* Main.storyboard */,
+				915EE3CD25E8F67E00B3B35A /* App */,
+				915EE3EC25E8FD3A00B3B35A /* Commons */,
+				915EE3B325E8F59E00B3B35A /* Network */,
+				91B501E925F6C66C000BA94A /* BIP39 */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		915EE39825E8F4E700B3B35A /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				915EE36D25E8F4B200B3B35A /* Assets.xcassets */,
+				915EE36F25E8F4B200B3B35A /* LaunchScreen.storyboard */,
+				915EE37225E8F4B200B3B35A /* Info.plist */,
+			);
+			path = Ressources;
+			sourceTree = "<group>";
+		};
+		915EE3B325E8F59E00B3B35A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				915EE3B425E8F5AD00B3B35A /* HTTPClient.swift */,
+				915EE3B525E8F5AD00B3B35A /* HTTPEngine.swift */,
+				915EE3B625E8F5AD00B3B35A /* RequestCancellationToken.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		915EE3BD25E8F5F700B3B35A /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				915EE3BE25E8F60300B3B35A /* AlertConfiguration.swift */,
+				915EE3BF25E8F60300B3B35A /* AlertType.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		915EE3CB25E8F66C00B3B35A /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				915EE3D925E8F75500B3B35A /* HomeCoordinator.swift */,
+				915EE3E725E8FC3800B3B35A /* WalletCoordinator.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		915EE3CD25E8F67E00B3B35A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				915EE3CB25E8F66C00B3B35A /* Navigation */,
+				915EE3BD25E8F5F700B3B35A /* Alert */,
+				915EE3CE25E8F69A00B3B35A /* Home */,
+				915EE3DE25E8FBDF00B3B35A /* Wallet */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		915EE3CE25E8F69A00B3B35A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				915EE3CF25E8F6BA00B3B35A /* HomeViewController.swift */,
+				915EE3D425E8F6C300B3B35A /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		915EE3DE25E8FBDF00B3B35A /* Wallet */ = {
+			isa = PBXGroup;
+			children = (
+				915EE3DF25E8FBF300B3B35A /* WalletViewController.swift */,
+				915EE3F525E8FD5600B3B35A /* WalletViewModel.swift */,
+			);
+			path = Wallet;
+			sourceTree = "<group>";
+		};
+		915EE3EC25E8FD3A00B3B35A /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				915EE3ED25E8FD4700B3B35A /* Closures.swift */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		91B501E925F6C66C000BA94A /* BIP39 */ = {
+			isa = PBXGroup;
+			children = (
+				91B501EF25F6C721000BA94A /* BIP39.swift */,
+				91B501EA25F6C688000BA94A /* Wordlist.swift */,
+			);
+			path = BIP39;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,10 +389,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				915EE36625E8F4B100B3B35A /* ViewController.swift in Sources */,
+				915EE3B925E8F5AD00B3B35A /* RequestCancellationToken.swift in Sources */,
+				915EE3A225E8F56D00B3B35A /* MainCoordinator.swift in Sources */,
+				915EE3B725E8F5AD00B3B35A /* HTTPClient.swift in Sources */,
+				915EE3B825E8F5AD00B3B35A /* HTTPEngine.swift in Sources */,
 				915EE36C25E8F4B100B3B35A /* LoTerra.xcdatamodeld in Sources */,
+				915EE3DA25E8F75500B3B35A /* HomeCoordinator.swift in Sources */,
+				915EE3C025E8F60300B3B35A /* AlertConfiguration.swift in Sources */,
+				915EE3A725E8F57A00B3B35A /* Context.swift in Sources */,
+				915EE3C125E8F60300B3B35A /* AlertType.swift in Sources */,
+				91B501F025F6C721000BA94A /* BIP39.swift in Sources */,
+				915EE3D525E8F6C300B3B35A /* HomeViewModel.swift in Sources */,
+				91B501EB25F6C688000BA94A /* Wordlist.swift in Sources */,
+				915EE3AF25E8F58D00B3B35A /* Screens.swift in Sources */,
+				915EE39D25E8F56000B3B35A /* Coordinator.swift in Sources */,
 				915EE36225E8F4B100B3B35A /* AppDelegate.swift in Sources */,
-				915EE36425E8F4B100B3B35A /* SceneDelegate.swift in Sources */,
+				915EE3D025E8F6BA00B3B35A /* HomeViewController.swift in Sources */,
+				915EE3EE25E8FD4700B3B35A /* Closures.swift in Sources */,
+				915EE3F625E8FD5600B3B35A /* WalletViewModel.swift in Sources */,
+				915EE3E025E8FBF300B3B35A /* WalletViewController.swift in Sources */,
+				915EE3E825E8FC3800B3B35A /* WalletCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,7 +586,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4YBSB9J6FK;
-				INFOPLIST_FILE = LoTerra/Info.plist;
+				INFOPLIST_FILE = LoTerra/Ressources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,7 +594,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Chimere.io.LTD.LoTerra;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -461,7 +605,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4YBSB9J6FK;
-				INFOPLIST_FILE = LoTerra/Info.plist;
+				INFOPLIST_FILE = LoTerra/Ressources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -469,7 +613,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Chimere.io.LTD.LoTerra;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
